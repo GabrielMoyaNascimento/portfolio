@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #dad6d6;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        @media screen and (max-width:900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Meu Portfólio</h1>
+        <hr>
+        <h2>Gabriel Moya Nascimento</h2>
+        <p>Trabalho com o desenvolvimento de sistemas utilizando
+            as tecnologias mais atuais do mercado.
+        </p>
+        <hr>
+        <p>Meus dados para contato:
+            <br>
+            Telefone: (44) 9 9959-7866
+            <br>
+            E-mail: gabrielmoya201415@gmail.com
+            <br>
+            LinkedIn:
+            <br>
+            Facebook:
+            <br>
+        </p>
+        <hr>
+        <h2 style="font-size: 20px;">Exemplos:</h2>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="./images/image1.png" style="width: 100%;" alt="Fotos de códigos">
+                    <h3>Projeto 1</h3>
+                    <p>Projeto feito.....</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="./images/image1.png" style="width: 100%;" alt="Fotos de códigos 2">
+                    <h3>Projeto 2</h3>
+                    <p>Projeto feito.....</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="./images/image1.png" style="width: 100%;" alt="Fotos de códigos 3">
+                    <h3>Projeto 3</h3>
+                    <p>Projeto feito.....</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="./images/image1.png" style="width: 100%;" alt="Fotos de códigos 4">
+                    <h3>Projeto 4</h3>
+                    <p>Projeto feito.....</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <img src="./images/image2.png" style="width: 100%;">
+            <h3>Sistema de Gestão Empresarial</h3>
+            <p>Projeto feito.....</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
